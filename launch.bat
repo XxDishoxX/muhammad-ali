@@ -11,6 +11,7 @@ if exist "package-lock.json" goto start
 
 call npm init
 call npm install node-sass --save-dev
+call npm install live-server --save-dev
 call npm install autoprefixer --save-dev
 call npm install concat --save-dev
 call npm install npm-run-all --save-dev
