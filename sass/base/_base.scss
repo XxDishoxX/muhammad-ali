@@ -1,0 +1,16 @@
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "bowlby", sans-serif;
+    font-weight: 400;
+    color: $color-primary-light;
+    font-size: 10px;
+    background-color: $color-primary-dark;
+}

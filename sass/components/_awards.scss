@@ -1,0 +1,17 @@
+.awards {
+    font-size: 2rem;
+    
+    &__list {
+        list-style: none;
+        margin-bottom: 4rem;
+        
+
+        li {
+            margin-bottom: 2.5rem;
+            border-bottom: 0.1px solid $color-grey;
+            display: inline-block;
+            padding-bottom: 1rem;
+
+        } 
+    }
+}

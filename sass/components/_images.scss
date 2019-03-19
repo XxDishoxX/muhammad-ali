@@ -1,0 +1,11 @@
+.image {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to bottom  , rgba(60, 60, 60, 0.8) , $color-primary-dark), url(../img/butterfly.jpg);
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+        animation: hover-zoom 1s;
+    }
+}
