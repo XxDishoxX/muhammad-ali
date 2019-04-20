@@ -1,56 +1,11 @@
-.about-ali {
-    padding: 25rem 0;
-    z-index: 200;
-}
-
-.background-play {
-    position: relative;
-    height: 100vh;
-    background-image: linear-gradient(to bottom  , $color-primary-dark , rgba(60, 60, 60, 0.8) , $color-primary-dark), url(../img/giphy_4.gif);
-    background-position: center;
-    background-size: cover;
-}
-
-.ali-image {
-    
-    position: relative;
-    clip-path: polygon(2% 1%, 90% 1%, 90% 99%, 2% 99%);
-
-    .ali-fist {
-        transition: all 0.5s;
-        transform: scale(1.1);
-    }
-
-    &:hover .ali-fist {
-        filter: blur(3px) brightness(80%);
-        transform: scale(1);
-    }
-
-    &__caption {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        color: $color-grey;
-        font-size: 5rem;
-        transform: translate(-30%, -50%);
-        text-transform: uppercase;
-        opacity: 0;
-        transition: all 0.5s;
-    }
-
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
-
-    }
-
+.section-about {
+    padding: 15rem 0;
 }
 
 .section-awards {
     padding: 15rem 15rem 5rem 15rem;
-
 }
 
 .section-story {
-    padding: 0rem 15rem 35rem 15rem;
+    padding: 15rem 15rem 35rem 15rem;
 }

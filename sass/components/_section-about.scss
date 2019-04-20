@@ -1,0 +1,38 @@
+.about {
+
+    
+    &__image-frame {
+        position: relative;
+        text-align: center;
+    }
+
+    &__image {
+        transition: all 0.5s;
+        transform: scale(1.05);
+        max-width: 100%;
+    }
+
+    &__image-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        color: $color-grey;
+        font-size: 5rem;
+        transform: translate(-30%, -50%);
+        text-transform: uppercase;
+        z-index: 100;
+        opacity: 0;
+        transition: all 0.5s;
+    }
+
+    &__image:hover {
+        filter: blur(3px) brightness(80%);
+        transform: scale(1);
+    }
+
+    &__image:hover ~ &__image-caption {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+}

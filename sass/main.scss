@@ -8,9 +8,11 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/awards";
 @import "components/button";
-@import "components/story";
+
+@import "components/section-about";
+@import "components/section-awards";
+@import "components/section-story";
 
 @import "layouts/grid";
 @import "layouts/header";

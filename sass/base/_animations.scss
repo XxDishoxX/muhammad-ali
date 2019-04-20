@@ -41,3 +41,34 @@
         transform: scale(1);
     }
 }
+
+[data-aos="show-item"] {
+    width: 100%;
+    background-color: $color-primary;
+    animation-timing-function: cubic-bezier(0,1.11,.02,.95);
+    transition-property: background-color, width;
+    &.aos-animate {
+        width: 0%;
+    }
+
+  }
+
+  [data-aos="animate-strap"] {
+    background-size: 46%;
+    
+    transition-property: background-size;
+    &.aos-animate {
+        background-size: 200%;
+    }
+
+  }
+
+  [data-aos="show-text"] {
+    color: $color-primary-dark;
+    transition-property: color;
+    &.aos-animate {
+        color: $color-red-dark;
+    }
+
+  }
+  

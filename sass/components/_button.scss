@@ -1,5 +1,6 @@
 .btn {
 
+
     &:link,
     &:visited {
         text-decoration: none;
@@ -7,11 +8,11 @@
         padding: 10px 20px;
         border: 1px solid $color-grey;
         display: inline-block;
-        border-radius: 500px;
+        border-radius: 10px;
         text-transform: uppercase;
+        font-size: 20px;
         font-weight: 400;
         transition: all 0.4s;
-
     }
 
     &:hover {
@@ -20,64 +21,27 @@
         border-color: $color-grey;
     }
 
-}
+    &--filled {
 
-.btn--filled {
 
-    &:link,
-    &:visited {
-        text-decoration: none;
-        color: $color-grey;
-        background-color: $color-primary-dark;
-        padding: 10px 20px;
-        border: 1px solid $color-primary-dark;
-        display: inline-block;
-        border-radius: 500px;
-        text-transform: uppercase;
-        font-weight: 400;
-        transition: all 0.4s;
-        font-size: 18px;
-
+        &:link,
+        &:visited {
+            color: $color-grey;
+            background-color: $color-primary-dark;
+        }
+    
+        &:hover {
+            background-color: rgba($color-primary, 0.2);
+            border-color: rgba($color-primary, 0.2);
+        }
     }
 
-    &:hover {
-        background-color: rgba(96, 96, 96, 0.2);
-        border-color: $color-primary;
-        border-color: rgba(96, 96, 96, 0.2);
+    &--animated {
+
+
+        &:link {
+            animation-name: fadeFromBottom;
+            animation-duration: 2s;
+        }
     }
-
-}
-
-.btn--filled {
-
-    &:link,
-    &:visited {
-        text-decoration: none;
-        color: $color-grey;
-        background-color: $color-primary-dark;
-        padding: 10px 20px;
-        border: 1px solid $color-primary-dark;
-        display: inline-block;
-        border-radius: 500px;
-        text-transform: uppercase;
-        font-weight: 400;
-        transition: all 0.4s;
-        font-size: 18px;
-
-    }
-
-    &:hover {
-        background-color: rgba(96, 96, 96, 0.2);
-        border-color: $color-primary;
-        border-color: rgba(96, 96, 96, 0.2);
-    }
-
-}
-
-.btn--animated {
-    &:link {
-        animation-name: fadeFromBottom;
-        animation-duration: 2s;
-    }
-
 }
