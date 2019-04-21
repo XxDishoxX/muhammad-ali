@@ -8,8 +8,11 @@
 }
 
 html {
-    font-family: "bowlby", sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    // Regular 400
+    // Medium 500
+    // Bold 700
+    font-weight: 500;
     color: $color-primary-light;
     font-size: 10px;
     background-color: $color-primary-dark;
