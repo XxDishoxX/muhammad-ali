@@ -6,20 +6,23 @@
     background-size: cover;
     animation-name: fade;
     animation-duration: 1s;
-    
 
 
     &__logo-box {
-        position: absolute;
-        top: 5%;
-        left: 5%;
+        float: left;
+        margin-top: 1.5rem;
+        margin-left: 1.3rem;
     }
 
     &__logo {
-        font-size: 42px;
+        font-size: 4.2rem;
         animation-name: fadeInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+
+        @include addMediaQuery(phone-l) {
+            font-size: 3.2rem;
+        }
     }
 
     &__quote-box {
@@ -39,33 +42,41 @@
         animation-fill-mode: backwards;
         animation-delay: 1s;
         margin-bottom: 5rem;
-    }
-    
-    .navigation {
-        float: right;
-        list-style: none;
-        margin-top: 3%;
-        margin-right: 2%;
-    
-        & li {
-            display: inline-block;
-            padding-left: 2rem;
-    
-           & a:link,
-           & a:visited {
-                text-decoration: none;
-                font-weight: 500;
-                font-size: 2rem;
-                color: $color-grey;
-                transition: color 0.2s;
-            }
-    
-            & a:hover,
-            & a:active, {
-                color: $color-grey-dark;
-            }
-                    
+
+        @include addMediaQuery(phone-l) {
+            font-size: 2.2rem;
         }
-    
     }
+    
+
+}
+
+.navigation {
+    float: right;
+    list-style: none;
+    margin-top: 2.5rem;
+    margin-right: 1.3rem;
+
+
+    & li {
+        display: inline-block;
+        padding-left: 2rem;
+
+
+        & a:link,
+        & a:visited {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 2rem;
+            color: $color-grey;
+            transition: color 0.2s;
+        }
+
+        & a:hover,
+        & a:active {
+            color: $color-grey-dark;
+        }
+                
+    }
+
 }

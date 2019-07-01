@@ -8,4 +8,18 @@
 
 .section-story {
     padding: 15rem 15rem 35rem 15rem;
+
+    @include addMediaQuery(laptop) {
+        padding: 15rem 7rem 35rem 7rem;
+    }
+    
+    @include addMediaQuery(tablet) {
+        padding: 15rem 5rem 35rem 5rem;
+    }
+
+    @include addMediaQuery(phone-l) {
+        padding: 15rem 1rem 35rem 1rem;
+    }
+
+
 }

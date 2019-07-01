@@ -57,8 +57,11 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #c2c2c2;
-  font-size: 10px;
+  font-size: 62.5%;
   background-color: #1c1c1c; }
+  @media (max-width: 48em) {
+    html {
+      font-size: 40.5%; } }
 
 .heading-secondry {
   font-size: 3.5rem;
@@ -133,7 +136,7 @@ html {
 .about__image {
   transition: all 0.5s;
   transform: scale(1.05);
-  max-width: 100%; }
+  max-width: 89%; }
 
 .about__image-caption {
   position: absolute;
@@ -180,24 +183,42 @@ html {
 
 .story {
   width: 75%;
-  height: 15rem;
+  height: auto;
   background-image: linear-gradient(90deg, rgba(194, 194, 194, 0.9) 0%, rgba(194, 194, 194, 0.9) 50%, transparent 50%);
   background-size: 0%;
   color: #1c1c1c;
   margin: 0 auto;
+  overflow: hidden;
+  border-radius: 6px;
   margin-bottom: 3rem;
   background-repeat: no-repeat; }
+  @media (max-width: 48em) {
+    .story {
+      width: 80%; } }
+  @media (max-width: 26.5625em) {
+    .story {
+      width: 95%; } }
+  @media (max-width: 20em) {
+    .story {
+      width: 100%; } }
   .story__image--1 {
-    width: 20rem;
-    height: 15rem;
+    width: 23rem;
     float: left; }
+    @media (max-width: 48em) {
+      .story__image--1 {
+        width: 12rem; } }
   .story__image--2 {
-    width: 20rem;
-    height: 15rem;
+    width: 23rem;
     float: left; }
+    @media (max-width: 48em) {
+      .story__image--2 {
+        width: 12rem; } }
   .story__text {
     font-size: 2rem;
     text-align: center; }
+    @media (max-width: 48em) {
+      .story__text {
+        font-size: 1.5rem; } }
   .story__heading {
     text-align: center;
     padding-top: 1rem;
@@ -247,14 +268,17 @@ html {
   animation-name: fade;
   animation-duration: 1s; }
   .header__logo-box {
-    position: absolute;
-    top: 5%;
-    left: 5%; }
+    float: left;
+    margin-top: 1.5rem;
+    margin-left: 1.3rem; }
   .header__logo {
-    font-size: 42px;
+    font-size: 4.2rem;
     animation-name: fadeInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out; }
+    @media (max-width: 26.5625em) {
+      .header__logo {
+        font-size: 3.2rem; } }
   .header__quote-box {
     position: absolute;
     top: 50%;
@@ -269,24 +293,28 @@ html {
     animation-fill-mode: backwards;
     animation-delay: 1s;
     margin-bottom: 5rem; }
-  .header .navigation {
-    float: right;
-    list-style: none;
-    margin-top: 3%;
-    margin-right: 2%; }
-    .header .navigation li {
-      display: inline-block;
-      padding-left: 2rem; }
-      .header .navigation li a:link,
-      .header .navigation li a:visited {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 2rem;
-        color: #cac7c7;
-        transition: color 0.2s; }
-      .header .navigation li a:hover,
-      .header .navigation li a:active {
-        color: #adadad; }
+    @media (max-width: 26.5625em) {
+      .header__quote {
+        font-size: 2.2rem; } }
+
+.navigation {
+  float: right;
+  list-style: none;
+  margin-top: 2.5rem;
+  margin-right: 1.3rem; }
+  .navigation li {
+    display: inline-block;
+    padding-left: 2rem; }
+    .navigation li a:link,
+    .navigation li a:visited {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 2rem;
+      color: #cac7c7;
+      transition: color 0.2s; }
+    .navigation li a:hover,
+    .navigation li a:active {
+      color: #adadad; }
 
 .section-about {
   padding: 15rem 0; }
@@ -296,3 +324,12 @@ html {
 
 .section-story {
   padding: 15rem 15rem 35rem 15rem; }
+  @media (max-width: 64em) {
+    .section-story {
+      padding: 15rem 7rem 35rem 7rem; } }
+  @media (max-width: 48em) {
+    .section-story {
+      padding: 15rem 5rem 35rem 5rem; } }
+  @media (max-width: 26.5625em) {
+    .section-story {
+      padding: 15rem 1rem 35rem 1rem; } }

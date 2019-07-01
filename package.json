@@ -1,5 +1,5 @@
 {
-  "name": "muhammad-ali",
+  "name": "technical-documentation",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,18 +13,10 @@
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/XxDishoxX/muhammad-ali.git"
-  },
   "author": "Muhammad Darwish",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/XxDishoxX/muhammad-ali/issues"
-  },
-  "homepage": "https://github.com/XxDishoxX/muhammad-ali#readme",
   "devDependencies": {
-    "autoprefixer": "^9.5.0",
+    "autoprefixer": "^9.5.1",
     "concat": "^1.0.3",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
